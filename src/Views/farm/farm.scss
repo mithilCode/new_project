@@ -1,0 +1,116 @@
+.action_btn_group {
+  button {
+    background-color: transparent;
+    font-size: 25px;
+    margin: 5px;
+    padding: 0;
+    border: none;
+    &.delete_btn {
+      color: lightcoral;
+    }
+    &.update_btn {
+      color: #10383c;
+    }
+  }
+}
+.add_farm_list {
+  width: 100%;
+  display: flex;
+  justify-content: end;
+  button {
+    text-align: center;
+    color: #fff;
+    background-color: #10383c;
+    padding: 8px;
+    margin: 10px 5px;
+    border-radius: 6px;
+    border: 1px solid #10383c;
+    &:hover {
+      background-color: #fff;
+      color: #10383c;
+    }
+  }
+}
+.modal_content_scroll {
+  overflow-y: auto;
+  form {
+    max-width: 400px;
+    width: 100%;
+    background-color: #fff;
+    margin: 10px 0;
+    border-radius: 10px;
+    .error_show {
+      color: lightcoral;
+      font-size: 13px;
+    }
+    .form_control {
+      margin-bottom: 12px;
+      label {
+        display: block;
+        padding-bottom: 5px;
+      }
+      input {
+        max-width: 100%;
+        width: 100%;
+        padding: 5px;
+        background-color: #f6f9f6;
+        border: 2px solid #10383c;
+        border-radius: 6px;
+        font-size: 17px;
+      }
+    }
+    button {
+      max-width: 200px;
+      width: 100%;
+      background-color: #10383c;
+      border: 2px solid #10383c;
+      color: #fff;
+      padding: 8px;
+      font-size: 17px;
+      border-radius: 25px;
+      display: block;
+      margin: 20px auto 5px auto;
+      &:hover {
+        background-color: transparent;
+        color: #10383c;
+      }
+    }
+  }
+}
+
+.select_menu {
+  margin: 5px 0;
+  button {
+    max-width: 200px;
+    width: 100%;
+    background-color: #10383c;
+    color: #fff;
+    padding: 8px;
+    font-size: 15px;
+    border-radius: 25px;
+    border: transparent;
+    display: block;
+    margin: 25px auto 5px auto;
+  }
+  p {
+    font-size: 15px;
+    margin: 5px 0;
+  }
+}
+.select_set {
+  display: block;
+  width: 100%;
+  margin-bottom: 10px;
+  padding: 5px;
+  background-color: #f6f9f6;
+  border: 2px solid #10383c;
+  border-radius: 6px;
+  font-size: 17px;
+}
+
+.flax_farm_select_menu {
+  display: flex;
+  flex-direction: column;
+  row-gap: 6px;
+
+}

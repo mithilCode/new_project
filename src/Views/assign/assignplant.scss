@@ -1,0 +1,93 @@
+.assign_plant {
+  width: 100%;
+  display: flex;
+  justify-content: end;
+  button {
+    text-align: center;
+    font-weight: 600;
+    color: #fff;
+    background-color: #10383c;
+    padding: 8px;
+    margin: 10px 5px;
+    border-radius: 6px;
+    border: 1px solid #10383c;
+    &:hover {
+      background-color: #fff;
+      color: #10383c;
+    }
+  }
+}
+
+.form_control {
+  margin-bottom: 12px;
+  label {
+    display: block;
+    padding-bottom: 5px;
+  }
+  input {
+    max-width: 100%;
+    width: 100%;
+    padding: 5px;
+    background-color: #f6f9f6;
+    border: 2px solid #10383c;
+    border-radius: 6px;
+    font-size: 17px;
+  }
+}
+.name_set {
+  text-align: center;
+  font-weight: 600;
+}
+.farmDetail_set {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 5px 0;
+  button{
+    max-width: 80px;
+    width: 100%;
+    padding: 5px;
+    background-color: #689787;
+    border: 2px solid #689787;
+    border-radius: 4px;
+    color: #fff;
+    font-weight: 600;
+    &:hover{
+      background-color: transparent;
+      color: #689787;
+    }
+  }
+}
+.plant-details-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 20px 0;
+  font-size: 16px;
+  text-align: center;
+}
+
+.plant-details-table thead {
+  background-color: #f2f2f2;
+  th {
+    padding: 5px;
+  }
+}
+.plant-details-table th,
+.plant-details-table td {
+  border: 1px solid #ded7d7;
+}
+.plant-details-table tbody {
+  line-height: 1.5;
+}
+.submit_btn{
+  max-width: 200px;
+  width: 100%;
+  display: block;
+  margin: 0 auto;
+  padding: 10px;
+  font-weight: 600;
+  border-radius: 6px;
+  background-color: #10383c;
+  color: #fff;
+  border: none;
+}

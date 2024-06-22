@@ -1,0 +1,146 @@
+@import url("https://fonts.googleapis.com/css2?family=Readex+Pro:wght@160..700&display=swap");
+* {
+  box-sizing: border-box;
+}
+body {
+  font-family: "Readex Pro", sans-serif;
+  margin: 0;
+  padding: 0;
+}
+:is(h1, h2, h3, h4, h5, h6, p) {
+  margin: 0;
+}
+button {
+  cursor: pointer;
+}
+img {
+  max-width: 100%;
+  height: auto;
+}
+/* width */
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #689787;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+.notfound {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  img {
+    max-width: 400px;
+    width: 100%;
+    height: auto;
+  }
+}
+.table_img {
+  margin: 10px 0;
+  width: 100%;
+  img {
+    border-radius: 6px;
+  }
+}
+.image_preview {
+  img {
+    display: block;
+    margin: 10px auto;
+    width: 100px;
+  }
+}
+.edit_date {
+  display: flex;
+  align-items: center;
+    button {
+      background-color: transparent;
+      font-size: 15px;
+      margin: 5px;
+      padding: 0;
+      border: none;
+      &.pending {
+        color: #ff8300;
+      }
+      &.verified {
+        color: #10383c;
+      }
+      &.remove_btn {
+        color: lightcoral;
+      }
+  }
+}
+.date_picker_set{
+  label {
+    display: block;
+    padding-bottom: 5px;
+  }
+  input {
+    max-width: 100%;
+    width: 100%;
+    padding: 5px;
+    background-color: #f6f9f6;
+    border-radius: 6px;
+    border: 2px solid black;
+    font-size: 17px;
+  }
+  button{
+    max-width: 150px;
+    width: 100%;
+    background-color: #689787;
+    color: #fff;
+    padding: 5px;
+    font-size: 17px;
+    border-radius: 25px;
+    border: transparent;
+    display: block;
+    margin: 15px auto 5px  auto;
+}
+}
+
+.delivery-table-container {
+  margin: 20px;
+  overflow-x: auto;
+}
+
+.delivery-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.delivery-table th, .delivery-table td {
+  padding: 8px;
+  text-align: left;
+  border: 1px solid #ddd;
+}
+
+.delivery-table th {
+  background-color: #f2f2f2;
+}
+
+.delivery-table tbody tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+.delivery-table tbody tr:hover {
+  background-color: #ddd;
+}
+
+@media screen and (max-width: 768px) {
+  .delivery-table-container {
+    overflow-x: auto;
+  }
+}

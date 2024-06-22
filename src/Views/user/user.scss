@@ -1,0 +1,98 @@
+.status {
+  display: flex;
+  align-items: center;
+  button {
+    background-color: transparent;
+    font-size: 25px;
+    margin: 5px;
+    padding: 0;
+    border: none;
+    &.pending {
+      color: #ff8300;
+    }
+    &.verified {
+      color: #10383c;
+    }
+    &.remove_btn{
+      color: lightcoral;
+    }
+  }
+}
+
+// .border_set {
+//   border-bottom: 1px solid gray;
+//   .table_ul_list {
+//     padding: 0 0 0 20px;
+//     margin: 0;
+//   }
+// }
+
+.table_set {
+  // border: 1px solid ;
+  max-width: 100%;
+  width: 100%;
+}
+.margin_set {
+  margin: 5px 0;
+}
+
+.cursor_pointer {
+  cursor: pointer;
+}
+
+.next_day_delivery {
+  all: unset;
+  cursor: pointer;
+  svg {
+    width: 24px;
+    height: 24px;
+  }
+}
+
+// Next Day Delivery Modal
+
+.next_day_delivery_container {
+  margin-top: 30px;
+  display: flex;
+  align-items: stretch;
+  border-left: 1px solid rgba(0, 0, 0, 0.12);
+  border-top: 1px solid rgba(0, 0, 0, 0.12);
+  .head {
+    padding: 0 16px;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    min-height: 52px;
+    border-bottom-width: 1px;
+    border-bottom-color: rgba(0, 0, 0, 0.12);
+    border-bottom-style: solid;
+    border-right: 1px solid rgba(0, 0, 0, 0.12);
+    color: rgba(0, 0, 0, 0.87);
+    font-size: 12px;
+    font-weight: 500;
+  }
+  .day {
+    display: flex;
+    flex-direction: column;
+    .day_name {
+      height: 100%;
+      padding: 16px 16px;
+      display: flex;
+      align-items: center;
+      font-size: 14px;
+      border-bottom: 1px solid rgba(0, 0, 0, 0.12);
+      border-right: 1px solid rgba(0, 0, 0, 0.12);
+    }
+  }
+  .subrow_container {
+    margin-left: 47px;
+    border-left: 1px solid rgba(0, 0, 0, 0.12);
+  }
+}
+
+.modal_content {
+  .user_name {
+    font-size: 15px;
+    color: rgba(0, 0, 0, 0.5);
+  }
+}
